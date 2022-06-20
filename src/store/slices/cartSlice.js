@@ -16,7 +16,7 @@ export const cartSlice = createSlice({
         },
         decrement:(state,action) => {
             state.value -= 1
-            state -= action.payload
+            state.cartItems.pop(action.payload)
         }
     }
 })
